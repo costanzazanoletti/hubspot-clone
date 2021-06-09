@@ -133,9 +133,6 @@
     .btn {
       margin: 2rem 0;
     }
-    .text-smaller {
-      font-size: 0.8em;
-    }
   }
   &__image {
     position: absolute;
@@ -263,6 +260,37 @@
     }
   }
 }
+
+.cta-picture {
+  background-color: #fff;
+  padding: 6rem 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    width: 66%;
+  }
+
+  &__actions {
+    .btn {
+      margin: 2rem 0;
+    }
+  }
+
+  &__picture {
+    display: inline-block;
+    width: 33%;
+    text-align: right;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 .footer {
   min-height: 400px;
   background-color: var(--color-grey-dark-1);

@@ -13,6 +13,7 @@
 
   --color-grey-light: #cbd6e2;
   --color-grey-dark-1: #33475b;
+  --color-grey-dark-2: #516f90;
 
   --color-black: #000;
 
@@ -57,6 +58,9 @@ ul {
 //typography
 .text-primary-dark {
   color: var(--color-primary-dark) !important;
+}
+.text-grey {
+  color: var(--color-grey-dark-2);
 }
 
 .heading-primary {

@@ -11,6 +11,7 @@
   --color-secondary-dark: #007a8c;
   --color-grey-light: #cbd6e2;
   --color-grey-dark-1: #33475b;
+  --color-grey-dark-2: #516f90;
   --color-black: #000;
   --color-green: #00bda5; }
 
@@ -46,6 +47,9 @@ ul {
 
 .text-primary-dark {
   color: var(--color-primary-dark) !important; }
+
+.text-grey {
+  color: var(--color-grey-dark-2); }
 
 .heading-primary {
   font-size: 4.6rem;
@@ -159,8 +163,6 @@ ul {
     max-width: 24rem; }
     .cta__actions .btn {
       margin: 2rem 0; }
-    .cta__actions .text-smaller {
-      font-size: 0.8em; }
   .cta__image {
     position: absolute;
     z-index: 1;
@@ -252,6 +254,24 @@ ul {
       max-height: 100%;
       width: 100%; }
 
+.cta-picture {
+  background-color: #fff;
+  padding: 6rem 0; }
+  .cta-picture__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .cta-picture__text {
+    width: 66%; }
+  .cta-picture__actions .btn {
+    margin: 2rem 0; }
+  .cta-picture__picture {
+    display: inline-block;
+    width: 33%;
+    text-align: right; }
+    .cta-picture__picture img {
+      width: 100%; }
+
 .footer {
   min-height: 400px;
   background-color: var(--color-grey-dark-1); }
@@ -287,7 +307,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin: 0 4rem 3.2rem 4rem; }
+  margin-bottom: 3.2rem; }
   .card-list__card {
     transition: all 0.2s;
     text-align: left;
@@ -312,7 +332,9 @@ ul {
       text-align: left;
       padding-bottom: 2.4rem;
       margin: 1.2rem 0;
-      border-bottom: 1px solid var(--color-grey-light); }
+      border-bottom: 1px solid var(--color-grey-light);
+      height: 11rem;
+      overflow: hidden; }
     .card-list__card--features ul {
       font-size: 1.3rem;
       margin: 2rem 0; }

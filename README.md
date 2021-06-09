@@ -6,7 +6,5 @@ technical test for Boolean Careers
 
 - provare a scaricare svg invece di fontawesome
 - dropdown main-nav
-- section customers
-- section cta-picture
 - footer
 - chatbot
