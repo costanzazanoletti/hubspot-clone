@@ -5,6 +5,7 @@
   --color-primary-light-4: #ffbcac;
   --color-primary-dark: #ff7a59;
 
+  --color-secondary-light: #f5f8fa;
   --color-secondary: #0091ae;
   --color-secondary-dark: #007a8c;
 
@@ -12,6 +13,8 @@
   --color-grey-dark-1: #33475b;
 
   --color-black: #000;
+
+  --color-green: #00bda5;
 }
 
 * {
@@ -57,4 +60,18 @@ ul {
   font-size: 4.6rem;
   line-height: 6rem;
   margin-bottom: 3rem;
+}
+.heading-secondary {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+}
+.heading-tertiary {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.small {
+  font-size: 0.8em;
 }
