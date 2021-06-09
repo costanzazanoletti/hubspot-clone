@@ -6,9 +6,9 @@
   --color-primary-dark: #ff7a59;
   --color-secondary-light-1: #f5f8fa;
   --color-secondary-light-2: #00bda5;
+  --color-secondary-light-3: #00a4bd;
   --color-secondary: #0091ae;
   --color-secondary-dark: #007a8c;
-  --color-green: #00bda5;
   --color-grey-light: #cbd6e2;
   --color-grey-dark-1: #33475b;
   --color-black: #000;
@@ -53,7 +53,7 @@ ul {
   margin-bottom: 3rem; }
 
 .heading-secondary {
-  font-size: 3.2rem;
+  font-size: 3rem;
   line-height: 4rem;
   margin-bottom: 3rem; }
 
@@ -185,6 +185,72 @@ ul {
     justify-content: center; }
     .products__actions .btn {
       margin: 0 0.8rem; }
+
+.community {
+  color: #fff;
+  background-image: linear-gradient(45deg, var(--color-secondary-light-3), var(--color-secondary-light-2));
+  padding: 11.2rem 0; }
+  .community__header {
+    max-width: 710px;
+    text-align: center;
+    margin: 0 auto; }
+  .community__stats-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 8rem; }
+    .community__stats-grid-item {
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      text-align: center;
+      padding: 3rem;
+      width: calc(25% - 0.4rem); }
+      .community__stats-grid-item:nth-child(4) {
+        border-right: none;
+        border-bottom: 1px solid #fff; }
+      .community__stats-grid-item:nth-child(n + 5) {
+        border-bottom: none; }
+      .community__stats-grid-item:last-child {
+        border-bottom: none;
+        border-right: none; }
+      .community__stats-grid-item img {
+        max-height: 4rem;
+        margin-bottom: 1rem; }
+      .community__stats-grid-item .heading-primary {
+        margin-bottom: 1rem; }
+      .community__stats-grid-item .has-plus {
+        position: relative; }
+        .community__stats-grid-item .has-plus::after {
+          content: '+';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          color: #fff;
+          font-size: 1.6rem;
+          font-weight: 500; }
+
+.customers {
+  padding-top: 10rem; }
+  .customers__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .customers__text {
+    width: 33%;
+    text-align: left; }
+  .customers__logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    max-width: 60rem; }
+  .customers__logo {
+    flex: 1 1 25%;
+    text-align: center;
+    padding: 2rem; }
+    .customers__logo img {
+      max-height: 100%;
+      width: 100%; }
 
 .footer {
   min-height: 400px;
