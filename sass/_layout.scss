@@ -9,6 +9,8 @@
   &__main-nav {
     z-index: 90;
     box-shadow: 0 2px 4px rgba(#2d3e50, 0.2);
+    position: sticky;
+    top: 0;
   }
 }
 
@@ -110,13 +112,21 @@
 }
 
 .cta {
-  margin: 8rem 0;
+  padding-top: 10rem;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light-1),
+    var(--color-primary-light-2)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
   &__text {
     max-width: 430px;
     margin-left: 1.6rem;
     text-align: left;
   }
   &__actions {
+    max-width: 24rem;
     .btn {
       margin: 2rem 0;
     }
@@ -130,6 +140,6 @@
 }
 
 .footer {
-  height: 400px;
+  min-height: 400px;
   background-color: var(--color-grey-dark-1);
 }
