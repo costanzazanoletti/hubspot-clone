@@ -43,6 +43,8 @@
   margin: 0 4rem 3.2rem 4rem;
 
   &__card {
+    transition: all 0.2s;
+
     text-align: left;
     background-color: #fff;
     border-radius: 1rem;
@@ -109,7 +111,7 @@
         top: 1.5rem;
         right: -0.4rem;
         font-size: 1rem;
-        background-color: var(--color-green);
+        background-color: var(--color-secondary-light);
         color: #fff;
         text-transform: uppercase;
         font-weight: 500;
@@ -117,6 +119,11 @@
         padding: 0 0.4rem 0 1rem;
         line-height: 2rem;
       }
+    }
+
+    &:hover {
+      transform: scale(1.014);
+      box-shadow: 10px 50px -5px rgba(#33475b, 0.2);
     }
   }
 }
