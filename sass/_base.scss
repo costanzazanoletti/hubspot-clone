@@ -45,6 +45,7 @@ body {
 
   min-height: 100vh;
 }
+
 .container {
   padding: 0 1.6rem;
   margin: 0 auto;
@@ -54,4 +55,15 @@ body {
 ol,
 ul {
   list-style: none;
+}
+
+//typography
+.text-primary-dark {
+  color: var(--color-primary-dark) !important;
+}
+
+.heading-primary {
+  font-size: 4.6rem;
+  line-height: 6rem;
+  margin-bottom: 3rem;
 }

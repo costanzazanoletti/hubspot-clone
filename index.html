@@ -6,7 +6,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -19,7 +19,9 @@
     <title>HubSpotClone | Inbound Marketing, Sales, and Service Software</title>
   </head>
   <body>
+    <!-- START HEADER -->
     <header class="header">
+      <!-- START TOP NAVIGATION BAR -->
       <nav class="header__top-nav">
         <div class="container">
           <div class="navigation">
@@ -30,7 +32,7 @@
                     class="fas fa-angle-down"
                   ></i
                 ></a>
-                <ul class="dropdown__menu">
+                <ul class="dropdown__menu dropdown__menu--right">
                   <li class="dropdown__menu-item">
                     <a href="#" class="navigation__link">日本語</a>
                   </li>
@@ -58,15 +60,102 @@
               </li>
             </ul>
             <ul>
-              <li class="navigation__group-item">search</li>
-              <li class="navigation__group-item">log in</li>
-              <li class="navigation__group-item">customer support</li>
-              <li class="navigation__group-item">about</li>
+              <li class="navigation__group-item navigation__group-item--search">
+                <a href="#" class="navigation__link has-icon"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </li>
+              <li class="navigation__group-item">
+                <a href="#" class="navigation__link">Log in</a>
+              </li>
+              <li class="navigation__group-item">
+                <a href="#" class="navigation__link">Customer Support</a>
+              </li>
+              <li class="navigation__group-item has-dropdown">
+                <a href="#" class="navigation__link dropdown"
+                  >About<i class="fas fa-angle-down"></i
+                ></a>
+                <ul class="dropdown__menu dropdown__menu--left">
+                  <li class="dropdown__menu-item">
+                    <a href="#" class="navigation__link">About us</a>
+                  </li>
+                  <li class="dropdown__menu-item">
+                    <a href="#" class="navigation__link">Careers</a>
+                  </li>
+                  <li class="dropdown__menu-item">
+                    <a href="#" class="navigation__link">Contact Us</a>
+                  </li>
+                  <li class="dropdown__menu-item">
+                    <a href="#" class="navigation__link">Investor Relations</a>
+                  </li>
+                  <li class="dropdown__menu-item">
+                    <a href="#" class="navigation__link">Management Team</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      <nav class="header__main-nav"></nav>
+      <!-- END TOP NAVIGATION BAR -->
+      <!-- START MAIN STICKY NAVIGATION BAR -->
+      <nav class="header__main-nav">
+        <div class="container">
+          <div class="navigation">
+            <ul class="navigation__group">
+              <li class="navigation__group-item navigation__logo">
+                <a href="#" class="navigation__link"
+                  >HubSp<span class="text-primary-dark">o</span>t</a
+                >
+              </li>
+              <li class="navigation__group-item has-dropdown">
+                <a href="#" class="navigation__link dropdown"
+                  >Software<i class="fas fa-angle-down"></i
+                ></a>
+              </li>
+              <li class="navigation__group-item">
+                <a href="#" class="navigation__link">Pricing</a>
+              </li>
+              <li class="navigation__group-item has-dropdown">
+                <a href="#" class="navigation__link dropdown"
+                  >Resources<i class="fas fa-angle-down"></i
+                ></a>
+              </li>
+            </ul>
+            <ul class="navigation__group">
+              <li class="navigation__group-item">
+                <a href="#" class="btn btn--primary">Get HubSpot free</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- START MAIN STICKY NAVIGATION BAR -->
     </header>
+    <!-- END HEADER -->
+    <!-- START CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__text">
+          <h1 class="heading-primary">There’s a better way to grow.</h1>
+          <p>
+            Marketing, sales, and service software that helps your business grow
+            without compromise. Because &#8220;good for the business&#8221;
+            should also mean &#8220;good for the customer.&#8221;
+          </p>
+          <div class="cta__actions">
+            <a href="#" class="btn btn--primary btn--large">Get HubSpot free</a>
+            <p class="text-smaller">
+              Get started with FREE tools, and upgrade as you grow.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="cta__image" src="/img/hero.svg" alt="Hero Image" />
+    </section>
+    <!-- END CTA -->
+    <!-- START FOOTER-->
+    <footer class="footer"></footer>
+    <!-- END FOOTER-->
   </body>
 </html>
