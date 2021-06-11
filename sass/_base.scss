@@ -8,16 +8,17 @@
   --color-secondary-light-1: #f5f8fa;
   --color-secondary-light-2: #00bda5;
   --color-secondary-light-3: #00a4bd;
+  --color-secondary-light-4: #7fd1de;
+
   --color-secondary: #0091ae;
   --color-secondary-dark: #007a8c;
 
   --color-grey-light: #cbd6e2;
+  --color-grey-light-1: #7c98b6;
   --color-grey-dark-1: #33475b;
   --color-grey-dark-2: #516f90;
 
   --color-black: #000;
-
-  --color-green: #00bda5;
 }
 
 * {
@@ -81,4 +82,5 @@ ul {
 }
 .small {
   font-size: 0.8em;
+  font-weight: 300;
 }

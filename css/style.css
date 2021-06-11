@@ -7,13 +7,14 @@
   --color-secondary-light-1: #f5f8fa;
   --color-secondary-light-2: #00bda5;
   --color-secondary-light-3: #00a4bd;
+  --color-secondary-light-4: #7fd1de;
   --color-secondary: #0091ae;
   --color-secondary-dark: #007a8c;
   --color-grey-light: #cbd6e2;
+  --color-grey-light-1: #7c98b6;
   --color-grey-dark-1: #33475b;
   --color-grey-dark-2: #516f90;
-  --color-black: #000;
-  --color-green: #00bda5; }
+  --color-black: #000; }
 
 * {
   margin: 0;
@@ -68,7 +69,8 @@ ul {
   font-weight: 500; }
 
 .small {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  font-weight: 300; }
 
 .top-nav {
   background-color: #fff;
@@ -87,7 +89,7 @@ ul {
   align-items: baseline; }
   .navigation__group {
     display: flex;
-    align-items: baseline; }
+    align-items: center; }
   .navigation__group-item {
     display: inline-block;
     position: relative; }
@@ -122,11 +124,13 @@ ul {
   .navigation__logo {
     font-weight: 500;
     font-size: 2.5rem;
-    padding: 1rem 2rem 1.8rem 0;
+    padding: 1.8rem 4rem 1.8rem 0;
     letter-spacing: -2px; }
     .navigation__logo:hover .navigation__link {
       text-decoration: none;
       color: inherit; }
+    .navigation__logo img {
+      height: 2.8rem; }
 
 .navigation__group-item--search .navigation__link, .navigation__group-item--search .navigation__link:link, .navigation__group-item--search .navigation__link:visited, .navigation__group-item--search .navigation__link:hover {
   color: var(--color-secondary-dark); }
@@ -273,8 +277,81 @@ ul {
       width: 100%; }
 
 .footer {
-  min-height: 400px;
-  background-color: var(--color-grey-dark-1); }
+  background-color: var(--color-grey-dark-1);
+  color: #fff;
+  text-transform: initial;
+  padding: 6rem 4rem; }
+  .footer h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0 0 1.4rem 0; }
+  .footer__links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .footer__links-left {
+    border-right: 1px solid var(--color-grey-light-1);
+    width: 40%; }
+    .footer__links-left ul {
+      columns: 2; }
+  .footer__links-right {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3rem; }
+  .footer__links-item {
+    margin-right: 2rem; }
+    .footer__links-item:last-child {
+      margin-bottom: 1.4rem; }
+    .footer__links-item a, .footer__links-item a:visited, .footer__links-item a:link {
+      display: block;
+      color: var(--color-grey-light);
+      font-size: 1.2rem;
+      text-decoration: none; }
+    .footer__links-item:hover a {
+      color: var(--color-secondary-light-4);
+      text-decoration: underline; }
+  .footer__social {
+    padding: 2rem 0; }
+    .footer__social .container {
+      position: relative; }
+      .footer__social .container::before, .footer__social .container::after {
+        content: '';
+        width: 33%;
+        border-bottom: solid 1px var(--color-grey-light);
+        position: absolute;
+        top: 50%;
+        z-index: 1; }
+      .footer__social .container::before {
+        right: 1.6rem; }
+      .footer__social .container::after {
+        left: 1.6rem; }
+  .footer__social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .footer__social-item {
+    margin: 0 2rem; }
+    .footer__social-item a, .footer__social-item a:link, .footer__social-item a:visited {
+      font-size: 2.8rem;
+      color: var(--color-grey-light); }
+    .footer__social-item a:hover {
+      color: var(--color-secondary-light-4); }
+  .footer__bottom {
+    text-align: center; }
+  .footer__logo {
+    height: 2.8rem; }
+  .footer__copyright {
+    font-size: 1.2rem;
+    color: var(--color-grey-light);
+    font-weight: 300; }
+  .footer__legal a, .footer__legal a:visited, .footer__legal a:link {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0rem 1.3rem; }
+  .footer__legal a:hover {
+    color: var(--color-secondary-light-4); }
+  .footer__legal a:first-child {
+    border-right: 1px solid var(--color-grey-light); }
 
 .btn, .btn:visited, .btn:link {
   display: inline-block;

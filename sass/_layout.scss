@@ -18,7 +18,7 @@
 
   &__group {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
   &__group-item {
     display: inline-block;
@@ -74,11 +74,14 @@
   &__logo {
     font-weight: 500;
     font-size: 2.5rem;
-    padding: 1rem 2rem 1.8rem 0;
+    padding: 1.8rem 4rem 1.8rem 0;
     letter-spacing: -2px;
     &:hover .navigation__link {
       text-decoration: none;
       color: inherit;
+    }
+    img {
+      height: 2.8rem;
     }
   }
 }
@@ -292,6 +295,127 @@
 }
 
 .footer {
-  min-height: 400px;
   background-color: var(--color-grey-dark-1);
+  color: #fff;
+  text-transform: initial;
+  padding: 6rem 4rem;
+
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0 0 1.4rem 0;
+  }
+
+  &__links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__links-left {
+    border-right: 1px solid var(--color-grey-light-1);
+    width: 40%;
+    ul {
+      columns: 2;
+    }
+  }
+
+  &__links-right {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+  }
+
+  &__links-item {
+    margin-right: 2rem;
+    &:last-child {
+      margin-bottom: 1.4rem;
+    }
+
+    a {
+      &,
+      &:visited,
+      &:link {
+        display: block;
+        color: var(--color-grey-light);
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
+    }
+    &:hover {
+      a {
+        color: var(--color-secondary-light-4);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__social {
+    padding: 2rem 0;
+    .container {
+      position: relative;
+      &::before,
+      &::after {
+        content: '';
+        width: 33%;
+        border-bottom: solid 1px var(--color-grey-light);
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+      }
+      &::before {
+        right: 1.6rem;
+      }
+      &::after {
+        left: 1.6rem;
+      }
+    }
+  }
+  &__social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__social-item {
+    margin: 0 2rem;
+    a {
+      &,
+      &:link,
+      &:visited {
+        font-size: 2.8rem;
+        color: var(--color-grey-light);
+      }
+      &:hover {
+        color: var(--color-secondary-light-4);
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+  &__logo {
+    height: 2.8rem;
+  }
+  &__copyright {
+    font-size: 1.2rem;
+    color: var(--color-grey-light);
+    font-weight: 300;
+  }
+  &__legal {
+    a {
+      &,
+      &:visited,
+      &:link {
+        font-size: 1.4rem;
+        color: #fff;
+        padding: 0rem 1.3rem;
+      }
+      &:hover {
+        color: var(--color-secondary-light-4);
+      }
+      &:first-child {
+        border-right: 1px solid var(--color-grey-light);
+      }
+    }
+  }
 }
