@@ -2,7 +2,5 @@
 
 Redesign from scratch https://www.hubspot.com/ for a technical test
 
-# TO DO
-
-- dropdown main-nav
-- chatbot
+- Replaced svg sprites with icon fonts (https://fontawesome.com/v5.15)
+- Replaced font family AvenirNext and Helvetica Neue with free alternative Montserrat

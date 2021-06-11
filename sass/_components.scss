@@ -1,4 +1,4 @@
-// buttons
+// buttons and links
 .btn {
   &,
   &:visited,
@@ -54,24 +54,42 @@
   }
 }
 
+.link-secondary {
+  &,
+  &:visited,
+  &:link {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &::after {
+    content: ' →';
+  }
+}
+
 // cards
 .card-list {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin-bottom: 3.2rem;
 
   &__card {
-    transition: all 0.2s;
-
     text-align: left;
     background-color: #fff;
     border-radius: 1rem;
-    box-shadow: 0 0 11px #eaf0f6;
     width: calc(33% - 1.6rem);
-    padding: 3.2rem;
-    margin-right: 2rem;
-    margin-bottom: 3rem;
+    padding: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+      box-shadow: 0 0 11px #eaf0f6;
+    }
 
     &:nth-child(3) {
       margin-right: 0;
@@ -80,6 +98,7 @@
     &--header {
       display: flex;
       align-items: baseline;
+      margin-bottom: 1rem;
       img {
         height: 2rem;
         margin-right: 1rem;
@@ -91,11 +110,7 @@
         font-size: 1.4rem;
         line-height: 2rem;
         text-align: left;
-        padding-bottom: 2.4rem;
-        margin: 1.2rem 0;
-        border-bottom: 1px solid var(--color-grey-light);
-        height: 11rem;
-        overflow: hidden;
+        padding-left: 3rem;
       }
     }
 
@@ -132,19 +147,20 @@
         top: 1.5rem;
         right: -0.4rem;
         font-size: 1rem;
-        background-color: var(--color-secondary-light);
+        background-color: var(--color-secondary-light-2);
         color: #fff;
         text-transform: uppercase;
         font-weight: 500;
         border-radius: 1.5rem 0.5rem 0.5rem 1.5rem;
         padding: 0 0.4rem 0 1rem;
         line-height: 2rem;
+        &--inline {
+          top: 2.2rem;
+          right: 0.4rem;
+          border-radius: 0.4rem;
+          padding: 0 0.6rem;
+        }
       }
-    }
-
-    &:hover {
-      transform: scale(1.014);
-      box-shadow: 10px 50px -5px rgba(#33475b, 0.2);
     }
   }
 }

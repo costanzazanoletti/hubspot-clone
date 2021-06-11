@@ -30,7 +30,11 @@
                   class="fas fa-angle-down"
                 ></i
               ></a>
-              <ul class="dropdown__menu dropdown__menu--right">
+              <ul
+                class="dropdown__menu dropdown__menu--right"
+                role="menu"
+                aria-hidden="true"
+              >
                 <li class="dropdown__menu-item">
                   <a href="#" class="navigation__link">日本語</a>
                 </li>
@@ -73,7 +77,11 @@
               <a href="#" class="navigation__link dropdown"
                 >About<i class="fas fa-angle-down"></i
               ></a>
-              <ul class="dropdown__menu dropdown__menu--left">
+              <ul
+                class="dropdown__menu dropdown__menu--left"
+                role="menu"
+                aria-hidden="true"
+              >
                 <li class="dropdown__menu-item">
                   <a href="#" class="navigation__link">About us</a>
                 </li>
@@ -106,15 +114,111 @@
                 ><img src="/img/logo-color.svg" class="logo" alt="company logo"
               /></a>
             </li>
-            <li class="navigation__group-item has-dropdown">
+            <li class="navigation__group-item has-menu">
               <a href="#" class="navigation__link dropdown"
                 >Software<i class="fas fa-angle-down"></i
               ></a>
+              <!-- menu content -->
+              <div class="menu" aria-hidden="true" role="menu">
+                <div class="menu__container">
+                  <div class="menu__column menu__column--left">
+                    <h4 class="h4">The Full CRM Platform</h4>
+                    <a href="#" class="link-secondary"
+                      >Overview of all products</a
+                    >
+                    <h4 class="h4">Free CRM</h4>
+                    <a href="#" class="link-secondary"
+                      >Overview of HubSpot's free tools
+                    </a>
+                  </div>
+                  <div class="menu__column menu__column--right">
+                    <div class="card-list">
+                      <div class="card-list__card">
+                        <div class="card-list__card--header">
+                          <img
+                            src="img/Marketing-Hub.svg"
+                            alt="Marketing Hub"
+                          />
+                          <h4 class="h4">Marketing Hub</h4>
+                        </div>
+                        <div class="card-list__card--content">
+                          <p>
+                            Marketing automation software.
+                            <a href="#" class="link-secondary"
+                              >Free and premium plans</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-list__card">
+                        <div class="card-list__card--header">
+                          <img src="img/Sales-Hub.svg" alt="Sales Hub" />
+                          <h4 class="h4">Sales Hub</h4>
+                        </div>
+                        <div class="card-list__card--content">
+                          <p>
+                            Sales CRM software.
+                            <a href="#" class="link-secondary"
+                              >Free and premium plans</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-list__card">
+                        <div class="card-list__card--header">
+                          <img src="img/Service-Hub.svg" alt="Service Hub" />
+                          <h4 class="h4">Service Hub</h4>
+                        </div>
+                        <div class="card-list__card--content">
+                          <p>
+                            Customer service software.
+                            <a href="#" class="link-secondary"
+                              >Free and premium plans</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-list__card">
+                        <div class="card-list__card--header">
+                          <img src="img/CMS-Hub.svg" alt="CMS Hub" />
+                          <h4 class="h4">CMS Hub</h4>
+                        </div>
+                        <div class="card-list__card--content">
+                          <p>
+                            Content management system software.
+                            <a href="#" class="link-secondary"
+                              >Free and premium plans</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-list__card has-ribbon">
+                        <p class="ribbon ribbon--inline">NEW</p>
+                        <div class="card-list__card--header">
+                          <img
+                            src="img/operations-3.svg"
+                            alt="Operations Hub"
+                          />
+                          <h4 class="h4">Operations Hub</h4>
+                        </div>
+                        <div class="card-list__card--content">
+                          <p>
+                            Operations software
+                            <a href="#" class="link-secondary"
+                              >Free and premium plans</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="navigation__group-item">
               <a href="#" class="navigation__link">Pricing</a>
             </li>
-            <li class="navigation__group-item has-dropdown">
+            <li class="navigation__group-item has-menu">
               <a href="#" class="navigation__link dropdown"
                 >Resources<i class="fas fa-angle-down"></i
               ></a>
@@ -128,13 +232,13 @@
         </div>
       </div>
     </nav>
-    <!-- START MAIN STICKY NAVIGATION BAR -->
+    <!-- END MAIN STICKY NAVIGATION BAR -->
 
     <!-- START CTA -->
     <section class="cta">
       <div class="container">
         <div class="cta__text">
-          <h1 class="heading-primary">There’s a better way to grow.</h1>
+          <h1 class="h1">There’s a better way to grow.</h1>
           <p>
             Marketing, sales, and service software that helps your business grow
             without compromise. Because &#8220;good for the business&#8221;
@@ -155,9 +259,7 @@
     <section class="products">
       <div class="container">
         <div class="products__header">
-          <h2 class="heading-secondary">
-            The CRM Platform Your Whole Business Will Love
-          </h2>
+          <h2 class="h2">The CRM Platform Your Whole Business Will Love</h2>
           <p>
             HubSpot&#8217;s CRM platform has all the tools and integrations you
             need for marketing, sales, content management, and customer service.
@@ -173,7 +275,7 @@
           <div class="card-list__card">
             <div class="card-list__card--header">
               <img src="img/Marketing-Hub.svg" alt="Marketing Hub" />
-              <h3 class="heading-tertiary">
+              <h3 class="h3">
                 Marketing Hub <span class="small">&trade;</span>
               </h3>
             </div>
@@ -198,9 +300,7 @@
           <div class="card-list__card">
             <div class="card-list__card--header">
               <img src="img/Sales-Hub.svg" alt="Sales Hub" />
-              <h3 class="heading-tertiary">
-                Sales Hub <span class="small">&trade;</span>
-              </h3>
+              <h3 class="h3">Sales Hub <span class="small">&trade;</span></h3>
             </div>
             <div class="card-list__card--content">
               <p>
@@ -224,9 +324,7 @@
           <div class="card-list__card">
             <div class="card-list__card--header">
               <img src="img/Service-Hub.svg" alt="Service Hub" />
-              <h3 class="heading-tertiary">
-                Service Hub <span class="small">&trade;</span>
-              </h3>
+              <h3 class="h3">Service Hub <span class="small">&trade;</span></h3>
             </div>
             <div class="card-list__card--content">
               <p>
@@ -250,9 +348,7 @@
           <div class="card-list__card">
             <div class="card-list__card--header">
               <img src="img/CMS-Hub.svg" alt="CMS Hub" />
-              <h3 class="heading-tertiary">
-                CMS Hub<span class="small">&trade;</span>
-              </h3>
+              <h3 class="h3">CMS Hub<span class="small">&trade;</span></h3>
             </div>
             <div class="card-list__card--content">
               <p>
@@ -277,7 +373,7 @@
             <p class="ribbon">NEW</p>
             <div class="card-list__card--header">
               <img src="img/operations-3.svg" alt="Operations Hub" />
-              <h3 class="heading-tertiary">
+              <h3 class="h3">
                 Operations Hub<span class="small">&trade;</span>
               </h3>
             </div>
@@ -307,7 +403,7 @@
     <!-- START COMMUNITY -->
     <section class="community">
       <div class="community__header">
-        <h2 class="heading-secondary">
+        <h2 class="h2">
           Learn and grow with award-winning support and a thriving community
           behind you.
         </h2>
@@ -325,12 +421,12 @@
               src="img/homepage_community_agency.svg"
               alt="Community agency"
             />
-            <h1 class="heading-primary has-plus">150</h1>
+            <h1 class="h1 has-plus">150</h1>
             <p class="small">HubSpot user groups</p>
           </div>
           <div class="community__stats-grid-item">
             <img src="img/homepage_community_blog.svg" alt="HubSpot blog" />
-            <h1 class="heading-primary has-plus">7M</h1>
+            <h1 class="h1 has-plus">7M</h1>
             <p class="small">monthly visits</p>
           </div>
           <div class="community__stats-grid-item">
@@ -338,12 +434,12 @@
               src="img/homepage_community_academy.svg"
               alt="HubSpot academy"
             />
-            <h1 class="heading-primary has-plus">350K</h1>
+            <h1 class="h1 has-plus">350K</h1>
             <p class="small">certified professionals</p>
           </div>
           <div class="community__stats-grid-item">
             <img src="img/homepage_community_inbound.svg" alt="Inbound" />
-            <h1 class="heading-primary">70K</h1>
+            <h1 class="h1">70K</h1>
             <p class="small">registered attendees</p>
           </div>
           <div class="community__stats-grid-item">
@@ -351,22 +447,22 @@
               src="img/HubSpot-App-Marketplace-White.png"
               alt="App marketplace"
             />
-            <h1 class="heading-primary has-plus">750</h1>
+            <h1 class="h1 has-plus">750</h1>
             <p class="small">integrations</p>
           </div>
           <div class="community__stats-grid-item">
             <img src="img/homepage_community_globe.svg" alt="Globe" />
-            <h1 class="heading-primary">6</h1>
+            <h1 class="h1">6</h1>
             <p class="small">languages</p>
           </div>
           <div class="community__stats-grid-item">
             <img src="img/homepage_community_followers.svg" alt="Followers" />
-            <h1 class="heading-primary has-plus">2.6M</h1>
+            <h1 class="h1 has-plus">2.6M</h1>
             <p class="small">followers</p>
           </div>
           <div class="community__stats-grid-item">
             <img src="img/Lists.svg" alt="Customers" />
-            <h1 class="heading-primary has-plus">113,000</h1>
+            <h1 class="h1 has-plus">113,000</h1>
             <p class="small">customers</p>
           </div>
         </div>
@@ -378,7 +474,7 @@
       <div class="container">
         <div class="customers__content">
           <div class="customers__text">
-            <h1 class="heading-primary">113,000+</h1>
+            <h1 class="h1">113,000+</h1>
             <p>
               customers in over <strong>120</strong> countries growing their
               businesses with HubSpot
@@ -435,7 +531,7 @@
       <div class="container">
         <div class="cta-picture__content">
           <div class="cta-picture__text">
-            <h2 class="heading-secondary">Start Growing With HubSpot Today</h2>
+            <h2 class="h2">Start Growing With HubSpot Today</h2>
             <p>
               With tools to make every part of your process more human and a
               support team excited to help you, getting started with inbound has
@@ -462,7 +558,7 @@
       <section class="footer__links">
         <div class="container footer__links-container">
           <div class="footer__links-left">
-            <h4>Popular features</h4>
+            <h4 class="h4">Popular features</h4>
             <ul>
               <li class="footer__links-item" data-order="0">
                 <a href="#">Free Meeting Scheduler App</a>
@@ -513,7 +609,7 @@
           </div>
           <div class="footer__links-right">
             <div class="footer__links-column">
-              <h4>Free tools</h4>
+              <h4 class="h4">Free tools</h4>
               <ul>
                 <li class="footer__links-item">
                   <a href="#">Website Grader</a>
@@ -546,7 +642,7 @@
             </div>
 
             <div class="footer__links-column">
-              <h4>Company</h4>
+              <h4 class="h4">Company</h4>
               <ul>
                 <li class="footer__links-item">
                   <a href="#">About us</a>
@@ -572,7 +668,7 @@
               </ul>
             </div>
             <div class="footer__links-column">
-              <h4>Customers</h4>
+              <h4 class="h4">Customers</h4>
               <ul>
                 <li class="footer__links-item">
                   <a href="#">Customer support</a>
@@ -581,7 +677,7 @@
                   <a href="#">Join a local user group</a>
                 </li>
               </ul>
-              <h4>Partners</h4>
+              <h4 class="h4">Partners</h4>
               <ul>
                 <li class="footer__links-item">
                   <a href="#">All partner program</a>

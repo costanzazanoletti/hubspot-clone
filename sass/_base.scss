@@ -46,7 +46,7 @@ body {
 }
 
 .container {
-  padding: 0 1.6rem;
+  padding: 0 1.2rem;
   margin: 0 auto;
   max-width: 1080px;
   box-sizing: border-box;
@@ -65,21 +65,26 @@ ul {
   color: var(--color-grey-dark-2);
 }
 
-.heading-primary {
+.h1 {
   font-size: 4.6rem;
   line-height: 6rem;
   margin-bottom: 3rem;
 }
-.heading-secondary {
+.h2 {
   font-size: 3rem;
   line-height: 4rem;
   margin-bottom: 3rem;
 }
-.heading-tertiary {
+.h3 {
   font-size: 2rem;
   line-height: 3rem;
   margin-bottom: 1rem;
   font-weight: 500;
+}
+.h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.4rem;
 }
 .small {
   font-size: 0.8em;
