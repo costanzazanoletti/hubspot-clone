@@ -419,3 +419,11 @@
     }
   }
 }
+
+#chatbot {
+  display: block;
+  position: fixed;
+  right: 1.6rem;
+  bottom: 1.6rem;
+  z-index: 100;
+}

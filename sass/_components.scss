@@ -29,9 +29,28 @@
     }
   }
 
+  &--secondary {
+    background-color: var(--color-grey-dark-3);
+    color: #fff;
+  }
+
   &.btn--large {
     padding: 2rem 4rem;
     font-size: 1.7rem;
+  }
+
+  &.btn--round {
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    box-shadow: rgba(#000, 0.1) 0px 1px 6px, rgba(#000, 0.2) 0px 2px 24px;
+    i {
+      font-size: 2rem;
+      position: absolute;
+      top: calc(50% - 1rem);
+      left: calc(50% - 1rem);
+    }
   }
 }
 

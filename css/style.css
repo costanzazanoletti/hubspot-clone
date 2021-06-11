@@ -14,6 +14,7 @@
   --color-grey-light-1: #7c98b6;
   --color-grey-dark-1: #33475b;
   --color-grey-dark-2: #516f90;
+  --color-grey-dark-3: #425b76;
   --color-black: #000; }
 
 * {
@@ -353,6 +354,13 @@ ul {
   .footer__legal a:first-child {
     border-right: 1px solid var(--color-grey-light); }
 
+#chatbot {
+  display: block;
+  position: fixed;
+  right: 1.6rem;
+  bottom: 1.6rem;
+  z-index: 100; }
+
 .btn, .btn:visited, .btn:link {
   display: inline-block;
   text-align: center;
@@ -376,9 +384,25 @@ ul {
     background-color: var(--color-primary-light-3);
     color: var(--color-primary-dark); }
 
+.btn--secondary {
+  background-color: var(--color-grey-dark-3);
+  color: #fff; }
+
 .btn.btn--large {
   padding: 2rem 4rem;
   font-size: 1.7rem; }
+
+.btn.btn--round {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.2) 0px 2px 24px; }
+  .btn.btn--round i {
+    font-size: 2rem;
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem); }
 
 .card-list {
   display: flex;

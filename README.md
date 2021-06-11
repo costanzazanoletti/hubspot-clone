@@ -1,10 +1,8 @@
 # HubSpot Clone
 
-technical test for Boolean Careers
+Redesign from scratch https://www.hubspot.com/ for a technical test
 
 # TO DO
 
-- provare a scaricare svg invece di fontawesome
 - dropdown main-nav
-- footer
 - chatbot
