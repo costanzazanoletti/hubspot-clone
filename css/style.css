@@ -170,24 +170,57 @@ ul {
 
 .menu {
   position: absolute;
-  top: 100%;
-  left: -110%;
-  width: 90vw;
-  max-width: 1080px;
   display: none;
-  border: 1px solid var(--color-grey-light);
-  z-index: 100; }
-  .menu__container {
-    display: flex;
-    flex-direction: row; }
-  .menu__column {
-    padding: 3rem; }
-    .menu__column--left {
-      min-width: 20rem;
-      padding-top: 4.3rem;
-      background-color: var(--color-secondary-light-1); }
-    .menu__column--right {
-      background-color: #fff; }
+  z-index: 100;
+  border: 1px solid var(--color-grey-light); }
+  .menu-software {
+    top: 100%;
+    left: -110%;
+    width: 90vw;
+    max-width: 1080px; }
+    .menu-software__container {
+      display: flex;
+      flex-direction: row; }
+    .menu-software__column {
+      padding: 3rem; }
+      .menu-software__column--left {
+        min-width: 20rem;
+        padding-top: 4.3rem;
+        background-color: var(--color-secondary-light-1); }
+      .menu-software__column--right {
+        background-color: #fff; }
+  .menu-resources {
+    background-color: #fff;
+    top: 100%;
+    left: -110%;
+    width: 70vw;
+    max-width: 1080px; }
+    .menu-resources__list {
+      columns: 2;
+      padding: 1.6rem; }
+    .menu-resources__item {
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      break-inside: avoid-column; }
+      .menu-resources__item--left {
+        margin: 0 0.8rem 0 0;
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: var(--color-secondary-light-1);
+        position: relative; }
+        .menu-resources__item--left img {
+          position: absolute;
+          top: calc(50% - 1rem);
+          left: calc(50% - 1.2rem); }
+      .menu-resources__item--right .h4 {
+        padding: 0.8rem 0;
+        font-weight: 600; }
+      .menu-resources__item--right a {
+        display: block;
+        padding: 0.4rem 0 0.8rem 0;
+        text-transform: initial; }
 
 .cta {
   position: relative;
@@ -238,7 +271,13 @@ ul {
       padding: 3.2rem;
       margin-right: 2rem;
       margin-bottom: 3rem;
+      width: calc(33% - 1.6rem);
       box-shadow: 0 0 11px #eaf0f6; }
+      .products .card-list__card--header .img-wrapper {
+        background-color: #fff;
+        padding: 0; }
+        .products .card-list__card--header .img-wrapper img {
+          height: 2rem; }
       .products .card-list__card--content p {
         padding-bottom: 2.4rem;
         margin: 1.2rem 0;
@@ -458,17 +497,28 @@ ul {
     top: calc(50% - 1rem);
     left: calc(50% - 1rem); }
 
-.link-secondary, .link-secondary:visited, .link-secondary:link {
+.link--normal, .link--normal:visited, .link--normal:link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--color-grey-dark-1);
+  line-height: 2.9rem; }
+
+.link--normal:hover {
+  color: var(--color-secondary-dark);
+  text-decoration: underline; }
+
+.link--secondary, .link--secondary:visited, .link--secondary:link {
   text-decoration: none;
   color: var(--color-secondary);
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1rem; }
 
-.link-secondary:hover {
+.link--secondary:hover {
   text-decoration: underline; }
 
-.link-secondary::after {
+.link--secondary::after {
   content: ' →'; }
 
 .card-list {
@@ -479,7 +529,7 @@ ul {
     text-align: left;
     background-color: #fff;
     border-radius: 1rem;
-    width: calc(33% - 1.6rem);
+    width: calc(33% - 0.6rem);
     padding: 2rem;
     margin-right: 1rem;
     margin-bottom: 1rem; }
@@ -491,14 +541,19 @@ ul {
       display: flex;
       align-items: baseline;
       margin-bottom: 1rem; }
-      .card-list__card--header img {
-        height: 2rem;
-        margin-right: 1rem; }
+      .card-list__card--header .img-wrapper {
+        background: var(--color-secondary-light-1);
+        padding: 0.4rem 0.8rem;
+        margin-right: 1rem;
+        display: inline-flex; }
+        .card-list__card--header .img-wrapper img {
+          height: 1.9rem;
+          width: 1.9rem; }
     .card-list__card--content p {
       font-size: 1.4rem;
       line-height: 2rem;
       text-align: left;
-      padding-left: 3rem; }
+      padding-left: 4.5rem; }
     .card-list__card--features ul {
       font-size: 1.3rem;
       margin: 2rem 0; }
@@ -530,7 +585,7 @@ ul {
         padding: 0 0.4rem 0 1rem;
         line-height: 2rem; }
         .card-list__card.has-ribbon p.ribbon--inline {
-          top: 2.2rem;
-          right: 0.4rem;
+          top: 2.5rem;
+          right: 0;
           border-radius: 0.4rem;
           padding: 0 0.6rem; }

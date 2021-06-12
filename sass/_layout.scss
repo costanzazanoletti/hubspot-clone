@@ -1,3 +1,4 @@
+// TOP NAVIGATION
 .top-nav {
   background-color: #fff;
   font-size: 1.2rem;
@@ -136,31 +137,79 @@
 
 .menu {
   position: absolute;
-  top: 100%;
-  left: -110%;
-  width: 90vw;
-  max-width: 1080px;
   display: none;
-  border: 1px solid var(--color-grey-light);
   z-index: 100;
+  border: 1px solid var(--color-grey-light);
 
-  &__container {
-    display: flex;
-    flex-direction: row;
-  }
-  &__column {
-    padding: 3rem;
-    &--left {
-      min-width: 20rem;
-      padding-top: 4.3rem;
-      background-color: var(--color-secondary-light-1);
+  &-software {
+    top: 100%;
+    left: -110%;
+    width: 90vw;
+    max-width: 1080px;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
     }
-    &--right {
-      background-color: #fff;
+    &__column {
+      padding: 3rem;
+      &--left {
+        min-width: 20rem;
+        padding-top: 4.3rem;
+        background-color: var(--color-secondary-light-1);
+      }
+      &--right {
+        background-color: #fff;
+      }
+    }
+  }
+  &-resources {
+    background-color: #fff;
+    top: 100%;
+    left: -110%;
+    width: 70vw;
+    max-width: 1080px;
+
+    &__list {
+      columns: 2;
+      padding: 1.6rem;
+    }
+    &__item {
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      break-inside: avoid-column;
+
+      &--left {
+        margin: 0 0.8rem 0 0;
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: var(--color-secondary-light-1);
+        position: relative;
+
+        img {
+          position: absolute;
+          top: calc(50% - 1rem);
+          left: calc(50% - 1.2rem);
+        }
+      }
+      &--right {
+        .h4 {
+          padding: 0.8rem 0;
+          font-weight: 600;
+        }
+        a {
+          display: block;
+          padding: 0.4rem 0 0.8rem 0;
+          text-transform: initial;
+        }
+      }
     }
   }
 }
 
+// SECTION CTA
 .cta {
   position: relative;
   min-height: 800px;
@@ -196,6 +245,7 @@
   }
 }
 
+// SECTION PRODUCTS
 .products {
   background-color: var(--color-secondary-light-1);
   padding-top: 7rem;
@@ -225,7 +275,18 @@
       padding: 3.2rem;
       margin-right: 2rem;
       margin-bottom: 3rem;
+      width: calc(33% - 1.6rem);
       box-shadow: 0 0 11px #eaf0f6;
+
+      &--header {
+        .img-wrapper {
+          background-color: #fff;
+          padding: 0;
+          img {
+            height: 2rem;
+          }
+        }
+      }
 
       &--content {
         p {
@@ -241,6 +302,7 @@
   }
 }
 
+// SECTION COMMUNITY
 .community {
   color: #fff;
   background-image: linear-gradient(
@@ -304,6 +366,7 @@
   }
 }
 
+//SECTION CUSTOMERS
 .customers {
   padding-top: 10rem;
 
@@ -336,6 +399,7 @@
   }
 }
 
+// SECTION CTA-PICTURE
 .cta-picture {
   background-color: #fff;
   padding: 6rem 0;
@@ -366,6 +430,7 @@
   }
 }
 
+// FOOTER
 .footer {
   background-color: var(--color-grey-dark-1);
   color: #fff;
@@ -492,6 +557,7 @@
   }
 }
 
+// CHATBOT WIDGET
 #chatbot {
   display: block;
   position: fixed;

@@ -1,3 +1,4 @@
+// VARIABLES
 :root {
   --color-primary-light-1: #fef8f0;
   --color-primary-light-2: #fff3ee;
@@ -22,6 +23,7 @@
   --color-black: #000;
 }
 
+// RESET
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +34,7 @@
   box-sizing: inherit;
 }
 
+// BASIC SETTINGS
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px; (10px/16px browser default = 62.5%)
@@ -57,7 +60,7 @@ ul {
   list-style: none;
 }
 
-//typography
+// TYPOGRAPHY
 .text-primary-dark {
   color: var(--color-primary-dark) !important;
 }
