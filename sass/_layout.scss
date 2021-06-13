@@ -1,13 +1,13 @@
 // TOP NAVIGATION
 .top-nav {
-  background-color: #fff;
+  background-color: var(--color-white);
   font-size: 1.2rem;
 }
 
 .main-nav {
-  background-color: #fff;
+  background-color: var(--color-white);
   z-index: 90;
-  box-shadow: 0 2px 4px rgba(#2d3e50, 0.2);
+  box-shadow: 0 2px 4px rgba(var(--rgb-grey), 0.2);
   position: sticky;
   top: 0;
   .navigation__group-item {
@@ -44,7 +44,7 @@
         right: 2rem;
         height: 2rem;
         width: 2rem;
-        background: #fff;
+        background: var(--color-white);
         transform: rotate(45deg);
         border-left: 1px solid var(--color-grey-light);
         border-top: 1px solid var(--color-grey-light);
@@ -110,22 +110,13 @@
   }
 }
 
-.navigation__group-item--search .navigation__link {
-  &,
-  &:link,
-  &:visited,
-  &:hover {
-    color: var(--color-secondary-dark);
-  }
-}
-
 .dropdown__menu {
   position: absolute;
-  background-color: #fff;
+  background-color: var(--color-white);
   display: none;
   border: 1px solid var(--color-grey-light);
   border-radius: 0.3rem;
-  box-shadow: 0 1px 24px rgba(#2d3e50, 0.2);
+  box-shadow: 0 1px 4px rgba(var(--rgb-grey), 0.2);
   z-index: 100;
   &--right {
     left: 1.5rem;
@@ -159,12 +150,12 @@
         background-color: var(--color-secondary-light-1);
       }
       &--right {
-        background-color: #fff;
+        background-color: var(--color-white);
       }
     }
   }
   &-resources {
-    background-color: #fff;
+    background-color: var(--color-white);
     top: 100%;
     left: -110%;
     width: 70vw;
@@ -276,11 +267,11 @@
       margin-right: 2rem;
       margin-bottom: 3rem;
       width: calc(33% - 1.6rem);
-      box-shadow: 0 0 11px #eaf0f6;
+      box-shadow: 0 0 11px rgba(var(--rgb-light), 0.8);
 
       &--header {
         .img-wrapper {
-          background-color: #fff;
+          background-color: var(--color-white);
           padding: 0;
           img {
             height: 2rem;
@@ -304,7 +295,7 @@
 
 // SECTION COMMUNITY
 .community {
-  color: #fff;
+  color: var(--color-white);
   background-image: linear-gradient(
     45deg,
     var(--color-secondary-light-3),
@@ -325,15 +316,15 @@
     margin-top: 8rem;
 
     &-item {
-      border-right: 1px solid #fff;
-      border-bottom: 1px solid #fff;
+      border-right: 1px solid var(--color-white);
+      border-bottom: 1px solid var(--color-white);
       text-align: center;
       padding: 3rem;
       width: calc(25% - 0.4rem);
 
       &:nth-child(4) {
         border-right: none;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid var(--color-white);
       }
       &:nth-child(n + 5) {
         border-bottom: none;
@@ -357,7 +348,7 @@
           display: inline-block;
           position: absolute;
           top: 0;
-          color: #fff;
+          color: var(--color-white);
           font-size: 1.6rem;
           font-weight: 500;
         }
@@ -401,7 +392,7 @@
 
 // SECTION CTA-PICTURE
 .cta-picture {
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 6rem 0;
 
   &__content {
@@ -433,7 +424,7 @@
 // FOOTER
 .footer {
   background-color: var(--color-grey-dark-1);
-  color: #fff;
+  color: var(--color-white);
   text-transform: initial;
   padding: 6rem 4rem;
 
@@ -449,7 +440,7 @@
     align-items: flex-start;
   }
   &__links-left {
-    border-right: 1px solid var(--color-grey-light-1);
+    border-right: 1px solid var(--color-grey);
     width: 40%;
     ul {
       columns: 2;
@@ -544,7 +535,7 @@
       &:visited,
       &:link {
         font-size: 1.4rem;
-        color: #fff;
+        color: var(--color-white);
         padding: 0rem 1.3rem;
       }
       &:hover {

@@ -1,26 +1,32 @@
-// VARIABLES
+// CSS VARIABLES
 :root {
+  --color-primary: #ff7a59;
   --color-primary-light-1: #fef8f0;
   --color-primary-light-2: #fff3ee;
   --color-primary-light-3: #fff1ee;
   --color-primary-light-4: #ffbcac;
-  --color-primary-dark: #ff7a59;
 
+  --color-secondary: #0091ae;
   --color-secondary-light-1: #f5f8fa;
   --color-secondary-light-2: #00bda5;
   --color-secondary-light-3: #00a4bd;
   --color-secondary-light-4: #7fd1de;
-
-  --color-secondary: #0091ae;
+  --color-secondary-light-5: #00d0e4;
   --color-secondary-dark: #007a8c;
 
+  --color-grey: #7c98b6;
   --color-grey-light: #cbd6e2;
-  --color-grey-light-1: #7c98b6;
   --color-grey-dark-1: #33475b;
   --color-grey-dark-2: #516f90;
   --color-grey-dark-3: #425b76;
 
   --color-black: #000;
+  --color-white: #fff;
+
+  --rgb-grey: 45, 62, 80;
+  --rgb-light: 234, 240, 246;
+  --rgb-secondary: 0, 208, 208;
+  --rgb-black: 0, 0, 0;
 }
 
 // RESET
@@ -62,7 +68,7 @@ ul {
 
 // TYPOGRAPHY
 .text-primary-dark {
-  color: var(--color-primary-dark) !important;
+  color: var(--color-primary) !important;
 }
 .text-grey {
   color: var(--color-grey-dark-2);
