@@ -190,6 +190,8 @@ ul {
         min-width: 20rem;
         padding-top: 4.3rem;
         background-color: var(--color-secondary-light-1); }
+        .menu-software__column--left h4:not(first-child) {
+          padding-top: 2.8rem; }
       .menu-software__column--right {
         background-color: var(--color-white); }
   .menu-resources {
